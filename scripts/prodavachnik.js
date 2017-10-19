@@ -56,10 +56,11 @@ function startApp() {
 
     // user/login
     function loginUser() {
-        const kinveyLoginUrl = kinveyBaseUrl + "user/" + kinveyAppKey + "/login";
+        const kinveyLoginUrl = "https://mock.backend.com/user/kid_rk/login";
         const kinveyAuthHeaders = {
-            'Authorization': "Basic " + btoa(kinveyAppKey + ":" + kinveyAppSecret),
+            'Authorization': "Basic " + btoa("kid_rk:736804a668"),
         };
+
         let userData = {
             username: $('#formLogin input[name=username]').val(),
             password: $('#formLogin input[name=passwd]').val()
@@ -89,9 +90,9 @@ function startApp() {
 
     // user/register
     function registerUser() {
-        const kinveyRegisterUrl = kinveyBaseUrl + "user/" + kinveyAppKey + "/";
+        const kinveyRegisterUrl = "https://mock.backend.com/user/kid_rk/";
         const kinveyAuthHeaders = {
-            'Authorization': "Basic " + btoa(kinveyAppKey + ":" + kinveyAppSecret),
+            'Authorization': "Basic " + btoa("kid_rk:736804a668"),
         };
 
         let userData = {
