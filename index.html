@@ -14,6 +14,7 @@
     <a href="#" id="linkHome" class="menu-item">Home</a>
     <a href="#" id="linkLogin" class="menu-item">Login</a>
     <a href="#" id="linkRegister" class="menu-item">Register</a>
+	<a href="#" id="linkListAds" class="menu-item">List Advertisements</a>
     <a href="#" id="linkLogout" class="menu-item">Logout</a>
     <div></div>
 </header>
@@ -22,6 +23,7 @@
         <h1 class="title">Welcome</h1>
         <p class="body-text">Welcome to our advertisement site.</p>
     </section>
+	
         <section id="viewLogin" class="viewLogin">>
         <h1 class="titleForm">Please login</h1>
         <form id="formLogin" class="form">
@@ -32,6 +34,7 @@
             <div><input type="button" id="buttonLoginUser" value="Login" /></div>
         </form>
     </section>
+	
         <section id="viewRegister" class="viewRegister">
         <h1 class="titleForm">Please register here</h1>
         <form id="formRegister" class="form">
@@ -41,6 +44,26 @@
             <div><input type="password" name="passwd" required /></div>
             <div><input type="button" id="buttonRegisterUser" value="Register" /></div>
         </form>
+    </section>
+	
+	<section id="viewAds" class="viewAds">
+        <h1 class="titleForm">Advertisements</h1>
+        <div id="ads" class="ads">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Publisher</th>
+                    <th>Price</th>
+                    <th>Date Published</th>
+                </tr>
+                <tr>
+                    <td>Ad title</td>
+                    <td>Ad author</td>
+                    <td>Price</td>
+                    <td>Date published</td>
+                </tr>
+            </table>
+        </div>
     </section>
         <script>
         startApp();
