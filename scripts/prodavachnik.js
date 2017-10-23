@@ -283,4 +283,4 @@ const kinveyAppSecret = "736804a668";
             listAdverts();
         }
     }
-}
+} -
